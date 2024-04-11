@@ -2895,8 +2895,8 @@ end)
         end)
 --------------------------------------------------------------------------------------------------------------------------------------------
     Tabs.Main:AddButton({
-        Title = "config auto chest in discord click to join",
-        Description = "lấy script auto chest trong discord ấn để tham gia",
+        Title = "discord link",
+        Description = "click to join",
         Callback = function()
             setclipboard("https://discord.gg/FtCARZZXje")
         end
@@ -2959,17 +2959,16 @@ end)
     function UseCode(Text)
         game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer(Text)
     end
-
+    Tabs.Main:AddParagraph({
+        Title = "Experiencing normal server lag?",
+        Content = "use unlock fps (90) and remove texture"
+    })
     Tabs.Main:AddButton({
         Title = "unlock fps (can use both with remove texture)",
         Description = "mở khóa fps (giảm lag - reduce lag)",
         Callback = function()
             setfpscap(90)
         end
-    })
-    Tabs.Main:AddParagraph({
-        Title = "Experiencing normal server lag?\nUnable to afford a private server?",
-        Content = "--------------------------------------------\njoin my discord to get 20 private server free!"
     })
     Tabs.Main:AddButton({
         Title = "remove texture",
@@ -3252,7 +3251,7 @@ if Third_Sea then
         end
     end)
     
-    local ToggleCake = Tabs.Main:AddToggle("ToggleCake", {Title = "Auto Cake Prince & Dough King", Description = "đánh katakuri v1 và v2 (Dough King need spawn / v2 cần spawn trước)", Default = false })
+    local ToggleCake = Tabs.Main:AddToggle("ToggleCake", {Title = "Auto Katakuri", Description = "đánh katakuri v1 và v2", Default = false })
     ToggleCake:OnChanged(function(value)
         _G.CakePrince = value
     end)
