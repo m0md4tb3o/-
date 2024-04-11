@@ -118,7 +118,7 @@ if game.PlaceId == 7449423635 then
                 description = "```" .. player.DisplayName .. " (" .. player.Name .. ") ```",
                 color = tonumber(322852),
                 image = { url = selectedDay },
-                thumbnail = { url = "https://cdn.discordapp.com/attachments/1181972023539421204/1221706502130237510/image.png?ex=66138dd8&is=660118d8&hm=d2ec7a473f72b8cc576a00eb9052ff2fa65f7f8336c04e10bcb01a653e025e12&" },
+                thumbnail = { url = "https://cdn.discordapp.com/attachments/1188485828880633858/1227249987222503487/434447785_1115790482956899_6342233761754257656_n.png?ex=6627b89e&is=6615439e&hm=79aae32e0bc54e1ab2e5ced4728189a9cbb2e2fbe18e02529e1c9a32212aa0a9&" },
                 fields = {
                     {
                         name = "country",
