@@ -2406,7 +2406,7 @@ L_92_.BorderSizePixel = 0
 L_92_.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 L_92_.Size = UDim2.new(0, 50, 0, 50)
 L_92_.BackgroundTransparency = 1.000
-L_92_.Image = "rbxassetid://15933497653"
+L_92_.Image = "rbxassetid://17169831454"
 L_92_.MouseButton1Click:Connect(function()
     game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
 end)
