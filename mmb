@@ -245,7 +245,7 @@ then
 if game:IsLoaded() then
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
-local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/m0md4tb3o/-/main/c1"))()
+local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/m0md4tb3o/-/main/c2"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 ----------------------------------------------------------------------------------------------------------------------------------------------
