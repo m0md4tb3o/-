@@ -272,7 +272,6 @@ local Tabs = {
     Shop = Window:AddTab({ Title = "Shop" }),
     Misc = Window:AddTab({ Title = "Misc" }),
     Hop = Window:AddTab({ Title = "Server" }),
-    Fluent = Window:AddTab({ Title = "Config" }),
 }
 local Options = Fluent.Options
 do
