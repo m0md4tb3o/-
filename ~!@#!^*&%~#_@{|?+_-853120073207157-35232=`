@@ -255,7 +255,7 @@ local Window = Fluent:CreateWindow({
     TabWidth = 160,
     Size = UDim2.fromOffset(515, 350),
     Acrylic = false,
-    Theme = "Darker",
+    Theme = "NebulaHub",
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
