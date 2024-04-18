@@ -1,3 +1,15 @@
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
+if
+game.ReplicatedStorage:FindFirstChild("Remotes") 
+then
+   if
+game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+then
+game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main")
+if 
+game:GetService("Players").LocalPlayer.Character:FindFirstChild("Energy")
+then
+if game:IsLoaded() then
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/m0md4tb3o/-/main/c4"))()
@@ -15,19 +27,19 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "mbm" }),
-    Stats = Window:AddTab({ Title = "Sub Farming", Icon = "mbm" }),
-    Info = Window:AddTab({ Title = "Status", Icon = "mbm" }),
-    Seaev = Window:AddTab({ Title = "Sea Event", Icon = "mbm" }),
-    Player = Window:AddTab({ Title = "Local Player", Icon = "mbm" }),
-    Teleport = Window:AddTab({ Title = "Travel", Icon = "mbm" }),
-    Fruit = Window:AddTab({ Title = "Blox Fruit", Icon = "mbm" }),
-    Raid = Window:AddTab({ Title = "Raid", Icon = "mbm" }),
-    Race = Window:AddTab({ Title = "Race Trial", Icon = "mbm" }),
-    Shop = Window:AddTab({ Title = "Shop", Icon = "mbm" }),
-    Misc = Window:AddTab({ Title = "Misc", Icon = "mbm" }),
-    Hop = Window:AddTab({ Title = "Server", Icon = "mbm" }),
-    Setting = Window:AddTab({ Title = "Setting", Icon = "mbm" }),
+    Main = Window:AddTab({ Title = "Main"}),
+    Stats = Window:AddTab({ Title = "Sub Farming"}),
+    Info = Window:AddTab({ Title = "Status"}),
+    Seaev = Window:AddTab({ Title = "Sea Event"}),
+    Player = Window:AddTab({ Title = "Local Player"}),
+    Teleport = Window:AddTab({ Title = "Travel"}),
+    Fruit = Window:AddTab({ Title = "Blox Fruit"}),
+    Raid = Window:AddTab({ Title = "Raid"}),
+    Race = Window:AddTab({ Title = "Race Trial"}),
+    Shop = Window:AddTab({ Title = "Shop"}),
+    Misc = Window:AddTab({ Title = "Misc"}),
+    Hop = Window:AddTab({ Title = "Server"}),
+    Setting = Window:AddTab({ Title = "Setting"}),
 }
 local Options = Fluent.Options
 do
@@ -66,14 +78,6 @@ function AntiBan()
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-print("made by minh & dakii")
-    print("mbm x hub")
-    print("join my discord server : https://dsc.gg/m1m")
-    print("boing boing")
-    print("ty for using - have fun")
-    print("sk (on discord : @player.81 & @dakii_90790)")
-    print("wait ,.,")
-    print("LCTSV - .,.")  
 
 game:GetService("Players").LocalPlayer.Idled:connect(function()
 	game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
@@ -94,8 +98,8 @@ Third_Sea = true
 end
 
 Fluent:Notify({
-    Title = "Mbm Hub",
-    Content = "Script load..",
+    Title = "Nee Nii Calling You!!",
+    Content = "Script loading..",
     Duration = 5
 })
 
@@ -1331,7 +1335,7 @@ local listfastattack = {'0.25','0.2','0.15','0.1','0.05','0.02','0.015','0.01','
 
     local DropdownDelayAttack = Tabs.Main:AddDropdown("DropdownDelayAttack", {
         Title = "Select Fast Attack",
-        Description = "chọn độ trễ của tốc độ đánh",
+        Description = "Choose Attack Speed U Want",
         Values = listfastattack,
         Multi = false,
         Default = 1,
@@ -1361,8 +1365,8 @@ local listfastattack = {'0.25','0.2','0.15','0.1','0.05','0.02','0.015','0.01','
 end)
 
     local DropdownSelectWeapon = Tabs.Main:AddDropdown("DropdownSelectWeapon", {
-        Title = "Weapon",
-        Description = "vũ khí",
+        Title = "Select Weapon",
+        Description = "Choose Weapon U Want",
         Values = {'Melee','Sword','Blox Fruit'},
         Multi = false,
         Default = 1,
@@ -1411,7 +1415,7 @@ end)
         end
     end)
 
-    local ToggleLevel = Tabs.Main:AddToggle("ToggleLevel", {Title = "Auto Farm Level", Description = "cày cấp", Default = false })
+    local ToggleLevel = Tabs.Main:AddToggle("ToggleLevel", {Title = "Auto Farm Level", Description = "Auto Level Up", Default = false })
     ToggleLevel:OnChanged(function(Value)
         _G.AutoLevel = Value
     end)
@@ -1471,7 +1475,7 @@ end)
         end
         end)
         --------------------------------------------------------------------------------------------------------------------------------------------
-        local ToggleMobAura = Tabs.Main:AddToggle("ToggleMobAura", {Title = "Report Bug in My Discord ⚠ (video)", Description = "báo lỗi ở discord + video", Default = false })
+        local ToggleMobAura = Tabs.Main:AddToggle("ToggleMobAura", {Title = "Mob Aura [Bug]", Description = "Wait Nee Nii Fix Bug:D", Default = false })
         ToggleMobAura:OnChanged(function(Value)
             _G.AutoNear = Value
         end)
@@ -1508,7 +1512,7 @@ end)
             end
           end)
 
-        local ToggleCastleRaid = Tabs.Main:AddToggle("ToggleCastleRaid", {Title = "Auto Pirate Raid / indra", Description = "both auto pirate and kill indra", Default = false })
+        local ToggleCastleRaid = Tabs.Main:AddToggle("ToggleCastleRaid", {Title = "Auto Pirate Raid | Rip_Indra", Description = "Sea 3 Function Only", Default = false })
     ToggleCastleRaid:OnChanged(function(Value)
         _G.CastleRaid = Value
     end)
@@ -1551,15 +1555,9 @@ end)
         end
         end)
 --------------------------------------------------------------------------------------------------------------------------------------------
-    Tabs.Main:AddButton({
-        Title = "config auto chest in discord click to join",
-        Description = "lấy script auto chest trong discord ấn để tham gia",
-        Callback = function()
-            setclipboard("https://discord.gg/FtCARZZXje")
-        end
-    })
 
-    local ToggleSafeM = Tabs.Main:AddToggle("ToggleSafeM", {Title = "Anti Flag", Description = "tránh ban", Default = true })
+
+    local ToggleSafeM = Tabs.Main:AddToggle("ToggleSafeM", {Title = "Anti Flag", Description = "Bypass Blox Fruit Anti Cheat", Default = true })
     ToggleMobAura:OnChanged(function(Value)
         _G.runwhenloworantiflag = Value
     end)
@@ -1582,7 +1580,7 @@ end)
 ----------------------------------------------------------------------------------------------------------------------------------------------
       Tabs.Main:AddButton({
         Title = "Redeem All Code",
-        Description = "sử dụng all code",
+        Description = "Use All X2 EXP Code",
         Callback = function()
             UseCode("Sub2Fer999")
             UseCode("Enyu_is_Pro")
@@ -1612,19 +1610,19 @@ end)
     end
 
     Tabs.Main:AddParagraph({
-        Title = "Experiencing normal server lag?\nUnable to afford a private server?",
-        Content = "--------------------------------------------\njoin my discord to get 20 private server free!"
+        Title = "Nee Nii's Discord Server",
+        Content = "Help Nee Nii Road To 10k Members"
     })
     Tabs.Main:AddButton({
         Title = "Unlock Fps",
-        Description = "giảm lag - reduce lag",
+        Description = "",
         Callback = function()
             setfpscap(80)
         end
     })
     Tabs.Main:AddButton({
-        Title = "remove texture",
-        Description = "xóa hiệu ứng (giảm lag - reduce lag)",
+        Title = "Fps Boost",
+        Description = "",
         Callback = function()
             FPSBooster()
         end
@@ -1674,7 +1672,7 @@ end)
 --Mastery
     local DropdownMastery = Tabs.Main:AddDropdown("DropdownMastery", {
         Title = "Mastery Mode",
-        Description = "Chọn Chế Độ Thông Thạo",
+        Description = "Select Farm Mastery Method",
         Values = {"BF - Near Mobs"},
         Multi = false,
         Default = 1,
@@ -1696,8 +1694,8 @@ end)
     Options.ToggleMasteryFruit:SetValue(false)
 
     local SliderHealt = Tabs.Main:AddSlider("SliderHealt", {
-        Title = "Health (%) Mob",
-        Description = "% máu của quái còn lại khi dùng skill",
+        Title = "Kill At",
+        Description = "[%] HP",
         Default = 25,
         Min = 0,
         Max = 100,
@@ -1937,7 +1935,7 @@ end)
     end)
     --]]
 if Third_Sea then
-    local ToggleBone = Tabs.Main:AddToggle("ToggleBone", {Title = "Auto Bone farm", Description = "cày xương", Default = false })
+    local ToggleBone = Tabs.Main:AddToggle("ToggleBone", {Title = "Auto Farm Bone", Description = "Auto Quest & Farm", Default = false })
     ToggleBone:OnChanged(function(Value)
         _G.AutoBone = Value
     end)
@@ -2000,7 +1998,7 @@ if Third_Sea then
         end
     end)
     
-    local ToggleCake = Tabs.Main:AddToggle("ToggleCake", {Title = "Auto Cake Prince & Dough King", Description = "đánh katakuri v1 và v2 (Dough King need spawn / v2 cần spawn trước)", Default = false })
+    local ToggleCake = Tabs.Main:AddToggle("ToggleCake", {Title = "Auto Cake Prince & Dough King", Description = "Fully Auto Katakuri V1 [V2 Need Spawn]", Default = false })
     ToggleCake:OnChanged(function(value)
         _G.CakePrince = value
     end)
@@ -2077,7 +2075,7 @@ if Third_Sea then
         end
     end)
     
-    local ToggleSpawnCake = Tabs.Main:AddToggle("ToggleSpawnCake", {Title = "Auto Spawn Cake Prince", Description = "tự động triệu hồi katakuri", Default = true })
+    local ToggleSpawnCake = Tabs.Main:AddToggle("ToggleSpawnCake", {Title = "Auto Spawn Katakuri", Description = "Sea 3 Function Only", Default = true })
     ToggleSpawnCake:OnChanged(function(Value)
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")
     end)
@@ -2085,7 +2083,7 @@ if Third_Sea then
     end
     
         if Second_Sea then
-        local ToggleVatChatKiDi = Tabs.Main:AddToggle("ToggleVatChatKiDi", {Title = "Auto Ectoplasm", Description = "cày vật chất kì dị", Default = false })
+        local ToggleVatChatKiDi = Tabs.Main:AddToggle("ToggleVatChatKiDi", {Title = "Auto Ectoplasm", Description = "Sea 2 Function Only", Default = false })
         ToggleVatChatKiDi:OnChanged(function(Value)
             _G.Ectoplasm = Value
         end)
@@ -2141,8 +2139,8 @@ elseif Third_Sea then
 end
 
 local DropdownBoss = Tabs.Main:AddDropdown("DropdownBoss", {
-    Title = "select boss",
-    Description = "chọn boss",
+    Title = "Select Bosss",
+    Description = "Need To Farm Boss",
     Values = tableBoss,
     Multi = false,
     Default = 1,
@@ -2153,7 +2151,7 @@ DropdownBoss:OnChanged(function(Value)
     _G.SelectBoss = Value
 end)
 
-local ToggleAutoFarmBoss = Tabs.Main:AddToggle("ToggleAutoFarmBoss", {Title = "Auto Kill Boss", Description = "đánh boss đã chọn", Default = false })
+local ToggleAutoFarmBoss = Tabs.Main:AddToggle("ToggleAutoFarmBoss", {Title = "Auto Kill Boss", Description = "", Default = false })
 
 ToggleAutoFarmBoss:OnChanged(function(Value)
     _G.AutoBoss = Value
@@ -2274,7 +2272,7 @@ spawn(function()
     end
 end)
 --]]
-local ToggleHallow = Tabs.Stats:AddToggle("ToggleHallow", {Title = "Auto Hallow Scythe", Description = "cày lưỡi hái", Default = false })
+local ToggleHallow = Tabs.Stats:AddToggle("ToggleHallow", {Title = "Auto Hallow Scythe", Description = "Auto Taken Hallow  Scythe", Default = false })
 
 ToggleHallow:OnChanged(function(Value)
     AutoHallowSycthe = Value
@@ -2314,7 +2312,7 @@ spawn(function()
     end
 end)
 
-local ToggleNoClip = Tabs.Setting:AddToggle("ToggleNoClip", {Title = "No Clip", Description = "Xuyên Tường", Default = false })
+local ToggleNoClip = Tabs.Setting:AddToggle("ToggleNoClip", {Title = "No Clip", Description = "", Default = false })
 ToggleNoClip:OnChanged(function(value)
     _G.LOf = value
 end)
@@ -2359,7 +2357,7 @@ end)
         SelectMaterial = Value
     end)
 
-    local ToggleMaterial = Tabs.Main:AddToggle("ToggleMaterial", {Title = "Auto Material", Description = "cày vật liệu đã chọn", Default = false })
+    local ToggleMaterial = Tabs.Main:AddToggle("ToggleMaterial", {Title = "Auto Material", Description = "Auto Farm Material Selected", Default = false })
 
     ToggleMaterial:OnChanged(function(Value)
         _G.AutoMaterial = Value
@@ -2418,7 +2416,7 @@ end)
         end
       end)
 
-    local ToggleElite = Tabs.Main:AddToggle("ToggleElite", {Title = "Auto Elite Hunter", Description = "cày elite", Default = false })
+    local ToggleElite = Tabs.Main:AddToggle("ToggleElite", {Title = "Auto Elite Hunter", Description = "Fully Auto Elite Boss", Default = false })
 
     ToggleElite:OnChanged(function(Value)
        _G.AutoElite = Value
@@ -2470,11 +2468,9 @@ end)
         end
     end)
  end
- Tabs.Fluent:AddParagraph({
-    Title = "u can try new theme",
-    Content = "Mbm-Hub Theme"
-})
-    local ToggleTweenMirageIsland = Tabs.Seaev:AddToggle("ToggleTweenMirageIsland", {Title = "Tp To Mirage Island", Description = "bay đến đảo bí ẩn", Default = false })
+
+
+    local ToggleTweenMirageIsland = Tabs.Seaev:AddToggle("ToggleTweenMirageIsland", {Title = "Tp To Mirage Island", Description = "Tween To Mirage Island", Default = false })
     ToggleTweenMirageIsland:OnChanged(function(Value)
         _G.AutoMysticIsland = Value
     end) 
@@ -2491,7 +2487,7 @@ end)
         end)
     end)
     
-    local ToggleTweenGear = Tabs.Seaev:AddToggle("ToggleTweenGear", {Title = "Tp To Gear", Description = "bay đến bánh răng", Default = false })
+    local ToggleTweenGear = Tabs.Seaev:AddToggle("ToggleTweenGear", {Title = "Tp To Gear", Description = "Tween To Blue Gear", Default = false })
     ToggleTweenGear:OnChanged(function(Value)
         _G.TweenToGear = Value
     end) 
@@ -2517,7 +2513,7 @@ end)
     
 
 
-        local ToggleTPKitsune = Tabs.Seaev:AddToggle("ToggleTPKitsune", {Title = "Tp Kitsune Island", Description = "bay đến đảo kitsune", Default = false })
+        local ToggleTPKitsune = Tabs.Seaev:AddToggle("ToggleTPKitsune", {Title = "Tp Kitsune Island", Description = "Tween To Kitsune Island", Default = false })
         ToggleTPKitsune:OnChanged(function(Value)
           _G.TweenToKitsune = Value
         end)
@@ -2543,7 +2539,7 @@ end)
       end)
   
   
-        local ToggleCollectAzure = Tabs.Seaev:AddToggle("ToggleCollectAzure", {Title = "Collect Azure Embers", Description = "thu thập lửa xanh", Default = false })
+        local ToggleCollectAzure = Tabs.Seaev:AddToggle("ToggleCollectAzure", {Title = "Collect Azure Embers", Description = "Auto Collect Blue Embers", Default = false })
         ToggleCollectAzure:OnChanged(function(Value)
            _G.CollectAzure = Value
         end)
@@ -2594,7 +2590,7 @@ end)
             end
         end)
 
-        local ToggleTushita = Tabs.Stats:AddToggle("ToggleTushita", {Title = "Auto Tushita", Description = "lấy kiếm tushita", Default = false })
+        local ToggleTushita = Tabs.Stats:AddToggle("ToggleTushita", {Title = "Auto Tushita", Description = "Taken Tushita", Default = false })
         ToggleTushita:OnChanged(function(Value)
             AutoTushita = Value
         end)
@@ -2631,7 +2627,7 @@ end)
                    end)
 
 
-                   local ToggleHoly = Tabs.Stats:AddToggle("ToggleHoly", {Title = "Auto Holy Torch", Description = "tự động đốt đuốc (tushita)", Default = false })
+                   local ToggleHoly = Tabs.Stats:AddToggle("ToggleHoly", {Title = "Auto Holy Torch", Description = "", Default = false })
                    ToggleHoly:OnChanged(function(Value)
                     _G.Auto_Holy_Torch = Value
                    end)
@@ -2657,7 +2653,7 @@ end)
             
 
 if Second_Sea then
-        local ToggleFactory = Tabs.Stats:AddToggle("ToggleFactory", {Title = "Auto Farm Factory", Description = "cày nhà máy", Default = false })
+        local ToggleFactory = Tabs.Stats:AddToggle("ToggleFactory", {Title = "Auto Farm Factory", Description = "Sea 2 Function Only", Default = false })
         ToggleFactory:OnChanged(function(Value)
             _G.Factory = Value
         end)
@@ -5391,3 +5387,7 @@ spawn(function()
         end)
     end
 end)
+end
+end
+end
+end
