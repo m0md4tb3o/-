@@ -1,3 +1,4 @@
+--cac
 getgenv().Setting = {
     ["Team"] = "Pirates", --Can Change To "Marines" Or "Pirates"
     ["Chat"] = {"Nebula Hub On Top!"}, --Chat After Kill Target
@@ -578,11 +579,10 @@ Frame = Instance.new("Frame")
 Nebula = Instance.new("TextLabel")
 AutoBounty = Instance.new("TextLabel")
 Discord = Instance.new("TextLabel")
-TotalBountyEarned = Instance.new("TextLabel")
-BountyEarned = Instance.new("TextLabel")
-CilentTimeElapsed = Instance.new("TextLabel")
-AccoutTimeElapsed = Instance.new("TextLabel")
 CrentBounty = Instance.new("TextLabel")
+cac = Instance.new("TextLabel")
+UICorner = Instance.new("UICorner")
+CrentBounty_2 = Instance.new("TextLabel")
 
 -- Properties:
 
@@ -593,8 +593,8 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(-0.0766312629, 0, -0.0744416863, 0)
-Frame.Size = UDim2.new(0, 1165, 0, 662)
+Frame.Position = UDim2.new(0.0538695008, 0, 0.0260545909, 0)
+Frame.Size = UDim2.new(0, 483, 0, 261)
 
 Nebula.Name = "Nebula"
 Nebula.Parent = Frame
@@ -602,7 +602,7 @@ Nebula.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Nebula.BackgroundTransparency = 1.000
 Nebula.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Nebula.BorderSizePixel = 0
-Nebula.Position = UDim2.new(0.0967892334, 0, 0.0815643147, 0)
+Nebula.Position = UDim2.new(-0.0429204777, 0, 0.0839218795, 0)
 Nebula.Size = UDim2.new(0, 267, 0, 106)
 Nebula.Font = Enum.Font.SourceSans
 Nebula.Text = "Nebula"
@@ -615,7 +615,7 @@ AutoBounty.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AutoBounty.BackgroundTransparency = 1.000
 AutoBounty.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AutoBounty.BorderSizePixel = 0
-AutoBounty.Position = UDim2.new(0.29228431, 0, 0.074011445, 0)
+AutoBounty.Position = UDim2.new(0.420278788, 0, 0.0853461474, 0)
 AutoBounty.Size = UDim2.new(0, 259, 0, 116)
 AutoBounty.Font = Enum.Font.SourceSans
 AutoBounty.Text = "Auto Bounty"
@@ -628,64 +628,12 @@ Discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Discord.BackgroundTransparency = 1.000
 Discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Discord.BorderSizePixel = 0
-Discord.Position = UDim2.new(0.19436197, 0, 0.30665043, 0)
+Discord.Position = UDim2.new(0.209419772, 0, 0.579011023, 0)
 Discord.Size = UDim2.new(0, 282, 0, 42)
 Discord.Font = Enum.Font.SourceSans
 Discord.Text = "discord.gg/sscaBFAsAb   "
 Discord.TextColor3 = Color3.fromRGB(0, 81, 255)
 Discord.TextSize = 30.000
-
-TotalBountyEarned.Name = "TotalBountyEarned"
-TotalBountyEarned.Parent = Frame
-TotalBountyEarned.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TotalBountyEarned.BackgroundTransparency = 1.000
-TotalBountyEarned.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TotalBountyEarned.BorderSizePixel = 0
-TotalBountyEarned.Position = UDim2.new(0.204930484, 0, 0.263705581, 0)
-TotalBountyEarned.Size = UDim2.new(0, 259, 0, 40)
-TotalBountyEarned.Font = Enum.Font.SourceSans
-TotalBountyEarned.Text = "Total Bounty Earned: 0$"
-TotalBountyEarned.TextColor3 = Color3.fromRGB(102, 102, 102)
-TotalBountyEarned.TextSize = 30.000
-
-BountyEarned.Name = "BountyEarned"
-BountyEarned.Parent = Frame
-BountyEarned.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BountyEarned.BackgroundTransparency = 1.000
-BountyEarned.BorderColor3 = Color3.fromRGB(0, 0, 0)
-BountyEarned.BorderSizePixel = 0
-BountyEarned.Position = UDim2.new(0.203649357, 0, 0.234785989, 0)
-BountyEarned.Size = UDim2.new(0, 259, 0, 40)
-BountyEarned.Font = Enum.Font.SourceSans
-BountyEarned.Text = "Bounty Earned: 0$"
-BountyEarned.TextColor3 = Color3.fromRGB(102, 102, 102)
-BountyEarned.TextSize = 30.000
-
-CilentTimeElapsed.Name = "CilentTimeElapsed"
-CilentTimeElapsed.Parent = Frame
-CilentTimeElapsed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CilentTimeElapsed.BackgroundTransparency = 1.000
-CilentTimeElapsed.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CilentTimeElapsed.BorderSizePixel = 0
-CilentTimeElapsed.Position = UDim2.new(0.204930484, 0, 0.352096498, 0)
-CilentTimeElapsed.Size = UDim2.new(0, 259, 0, 40)
-CilentTimeElapsed.Font = Enum.Font.SourceSans
-CilentTimeElapsed.Text = "Cilent Time Elapsed: 0h:0m:0s"
-CilentTimeElapsed.TextColor3 = Color3.fromRGB(102, 102, 102)
-CilentTimeElapsed.TextSize = 30.000
-
-AccoutTimeElapsed.Name = "AccoutTimeElapsed"
-AccoutTimeElapsed.Parent = Frame
-AccoutTimeElapsed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AccoutTimeElapsed.BackgroundTransparency = 1.000
-AccoutTimeElapsed.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AccoutTimeElapsed.BorderSizePixel = 0
-AccoutTimeElapsed.Position = UDim2.new(0.218233928, 0, 0.390419722, 0)
-AccoutTimeElapsed.Size = UDim2.new(0, 259, 0, 40)
-AccoutTimeElapsed.Font = Enum.Font.SourceSans
-AccoutTimeElapsed.Text = "Account Time Elapsed: 0h:0m:0s"
-AccoutTimeElapsed.TextColor3 = Color3.fromRGB(102, 102, 102)
-AccoutTimeElapsed.TextSize = 30.000
 
 CrentBounty.Name = "CrentBounty"
 CrentBounty.Parent = Frame
@@ -693,12 +641,62 @@ CrentBounty.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CrentBounty.BackgroundTransparency = 1.000
 CrentBounty.BorderColor3 = Color3.fromRGB(0, 0, 0)
 CrentBounty.BorderSizePixel = 0
-CrentBounty.Position = UDim2.new(0.204507723, 0, 0.202164888, 0)
+CrentBounty.Position = UDim2.new(0.234486386, 0, 0.376885712, 0)
 CrentBounty.Size = UDim2.new(0, 259, 0, 40)
 CrentBounty.Font = Enum.Font.SourceSans
 CrentBounty.Text = "Current Bounty: 0$"
 CrentBounty.TextColor3 = Color3.fromRGB(102, 102, 102)
 CrentBounty.TextSize = 30.000
+
+cac.Name = "cac"
+cac.Parent = Frame
+cac.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cac.BackgroundTransparency = 1.000
+cac.BorderColor3 = Color3.fromRGB(0, 0, 0)
+cac.BorderSizePixel = 0
+cac.Position = UDim2.new(0.23094964, 0, 0.467384785, 0)
+cac.Size = UDim2.new(0, 259, 0, 40)
+cac.Font = Enum.Font.SourceSans
+cac.Text = "Account Time Elapsed: 0h:0m:0s"
+cac.TextColor3 = Color3.fromRGB(102, 102, 102)
+cac.TextSize = 30.000
+
+UICorner.Parent = Frame
+
+CrentBounty_2.Name = "CrentBounty"
+CrentBounty_2.Parent = Frame
+CrentBounty_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CrentBounty_2.BackgroundTransparency = 1.000
+CrentBounty_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CrentBounty_2.BorderSizePixel = 0
+CrentBounty_2.Position = UDim2.new(0.843182087, 0, 0.877861619, 0)
+CrentBounty_2.Size = UDim2.new(0, 89, 0, 38)
+CrentBounty_2.Font = Enum.Font.SourceSans
+CrentBounty_2.Text = "by nebula"
+CrentBounty_2.TextColor3 = Color3.fromRGB(102, 102, 102)
+CrentBounty_2.TextSize = 15.000
+
+-- Scripts:
+
+local function VFWRB_fake_script() -- cac.LocalScript 
+	local script = Instance.new('LocalScript', cac)
+
+	function UpdateTime()
+		local GameTime = math.floor(workspace.DistributedGameTime+0.5)
+		local Hour = math.floor(GameTime/(60^2))%24
+		local Minute = math.floor(GameTime/(60^1))%60
+		local Second = math.floor(GameTime/(60^0))%60
+		script.Parent.Text="Time Elapsed: "..Hour.."h:"..Minute.."m:"..Second.."s"
+	end
+	
+	spawn(function()
+		while true do
+			UpdateTime()
+			wait()
+		end
+	end)
+end
+coroutine.wrap(VFWRB_fake_script)()
 
 --// Counter
 local foldername = "Nebula Auto Bounty"
